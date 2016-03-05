@@ -1,0 +1,85 @@
+.boxno2 {
+  margin: 40px auto;
+  background: #005eff;
+  width: 150px;
+  height: 150px;
+}
+
+.boxno2:hover {
+  -webkit-transform: rotate(-360deg);
+  background: #d1e000;
+  border-radius: 100px;
+  width: 75px;
+  width: 75px;
+}  
+
+.rotate {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.rotate:hover {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: red;
+    position: relative;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+
+.transition {
+  height: 20px;
+  transition: background-color 0.5s ease;
+  background-color: red;
+}
+.transition:hover {
+  background-color: green;
+}
+
+.expand
+{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, -webkit-transform 2s;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s
+}
+.expand:hover
+{
+width: 300px;
+height: 300px
+transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+}

@@ -4,11 +4,35 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ 
+
+
+
+
+
+
 body {
   font-family: 'Lora', 'Times New Roman', serif;
+  
   font-size: 20px;
   color: #404040;
 }
+
+
+@font-face
+{
+font-family: 'Topper';
+src:url("/fonts/Germanica1.ttf");
+font-style: normal;
+font-weight: normal;
+}
+
+.maintitle
+{
+ /* font-family: 'Topper'; */
+    text-shadow: 7px 7px 7px black
+} 
+
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -22,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
@@ -145,6 +169,7 @@ hr.small {
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
+  font-family: 'Topper';
   padding: 100px 0 50px;
   color: white;
 }
@@ -392,4 +417,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #0085a1;
+}
+.test
+{
+  font-family: 'Topper';
 }
